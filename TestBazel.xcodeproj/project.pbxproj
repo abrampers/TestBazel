@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10F0EDAF9F6E00A79479A37C /* Pods_TestBazel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFEA6F88ECE1558A8CE6D830 /* Pods_TestBazel.framework */; };
 		215C430C22FD835000A5258A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215C430B22FD835000A5258A /* AppDelegate.swift */; };
 		215C430E22FD835000A5258A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215C430D22FD835000A5258A /* ViewController.swift */; };
 		215C431122FD835000A5258A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 215C430F22FD835000A5258A /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1178132A9648DD36F81F7689 /* Pods-TestBazel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestBazel.release.xcconfig"; path = "Target Support Files/Pods-TestBazel/Pods-TestBazel.release.xcconfig"; sourceTree = "<group>"; };
 		215C430822FD835000A5258A /* TestBazel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestBazel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		215C430B22FD835000A5258A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		215C430D22FD835000A5258A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		215C431222FD835200A5258A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		215C431522FD835200A5258A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		215C431722FD835200A5258A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFEA6F88ECE1558A8CE6D830 /* Pods_TestBazel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestBazel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD8A05E530DD0C6D0E00191E /* Pods-TestBazel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestBazel.debug.xcconfig"; path = "Target Support Files/Pods-TestBazel/Pods-TestBazel.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10F0EDAF9F6E00A79479A37C /* Pods_TestBazel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B12B3F2A2AA13BFD329D055 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD8A05E530DD0C6D0E00191E /* Pods-TestBazel.debug.xcconfig */,
+				1178132A9648DD36F81F7689 /* Pods-TestBazel.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		215C42FF22FD835000A5258A = {
 			isa = PBXGroup;
 			children = (
 				215C430A22FD835000A5258A /* TestBazel */,
 				215C430922FD835000A5258A /* Products */,
+				0B12B3F2A2AA13BFD329D055 /* Pods */,
+				ECD85E033A73A5EC88FFED1E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +81,14 @@
 			path = TestBazel;
 			sourceTree = "<group>";
 		};
+		ECD85E033A73A5EC88FFED1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AFEA6F88ECE1558A8CE6D830 /* Pods_TestBazel.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 215C431A22FD835200A5258A /* Build configuration list for PBXNativeTarget "TestBazel" */;
 			buildPhases = (
+				38DAA15D395FE39F462318D6 /* [CP] Check Pods Manifest.lock */,
 				215C430422FD835000A5258A /* Sources */,
 				215C430522FD835000A5258A /* Frameworks */,
 				215C430622FD835000A5258A /* Resources */,
+				88F28E9D9CE7355DC7C9A660 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38DAA15D395FE39F462318D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestBazel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88F28E9D9CE7355DC7C9A660 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestBazel/Pods-TestBazel-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestBazel/Pods-TestBazel-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestBazel/Pods-TestBazel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		215C430422FD835000A5258A /* Sources */ = {
@@ -280,15 +349,17 @@
 		};
 		215C431B22FD835200A5258A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD8A05E530DD0C6D0E00191E /* Pods-TestBazel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H8S6N7BJTQ;
 				INFOPLIST_FILE = TestBazel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = tokopedia.TestBazel;
+				PRODUCT_BUNDLE_IDENTIFIER = abrampers.TestBazel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -297,15 +368,17 @@
 		};
 		215C431C22FD835200A5258A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1178132A9648DD36F81F7689 /* Pods-TestBazel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H8S6N7BJTQ;
 				INFOPLIST_FILE = TestBazel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = tokopedia.TestBazel;
+				PRODUCT_BUNDLE_IDENTIFIER = abrampers.TestBazel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
