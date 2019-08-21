@@ -1,2 +1,4 @@
 bazel-*
 Vendor
+Pods/*
+*.lock

@@ -1,17 +1,6 @@
 load("@build_bazel_rules_apple//apple:ios.bzl", "ios_application")
 load("@build_bazel_rules_swift//swift:swift.bzl", "swift_library")
 
-objc_library(
-    name = "TextureObjc",
-    deps = ["//Vendor/Texture:Texture"],
-    sdk_frameworks = [
-        "AVFoundation",
-        "CoreMedia",
-        "SystemConfiguration",
-        "MobileCoreServices"
-    ],
-)
-
 swift_library(
     name = "TestBazelSources",
     srcs = glob([
@@ -21,7 +10,12 @@ swift_library(
         "TestBazel/Base.lproj/Main.storyboard"
     ],
     # deps = ["//Vendor/Texture:Texture"],
-    deps = [":TextureObjc"]
+    # deps = [":TextureObjc"]
+    deps = [
+        "//Vendor/RxSwift:RxSwift",
+        "//Vendor/SnapKit:SnapKit"
+    ]
+    # deps = ["@RxSwift//:RxSwift"]
 )
 
 ios_application(

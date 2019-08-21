@@ -50,3 +50,8 @@ http_archive(
 
 # Load the new_pod_repository macro - needed for `WORKSPACE` usage
 load("@rules_pods//BazelExtensions:workspace.bzl", "new_pod_repository")
+
+new_pod_repository(
+  name = "RxSwift",
+  url = "https://github.com/ReactiveX/RxSwift/archive/5.0.1.zip"
+)

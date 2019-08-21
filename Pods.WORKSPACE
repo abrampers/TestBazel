@@ -26,3 +26,13 @@ new_pod_repository(
   name = "PINCache",
   url = "https://github.com/pinterest/PINCache/archive/d886490de6d297e38f80bb750ff2dec4822fb870.zip"
 )
+
+new_pod_repository(
+  name = "RxSwift",
+  url = "https://github.com/ReactiveX/RxSwift/archive/5.0.1.zip"
+)
+
+new_pod_repository(
+  name = "SnapKit",
+  url = "https://github.com/SnapKit/SnapKit/archive/5.0.1.zip"
+)

@@ -6,6 +6,8 @@ target 'TestBazel' do
   use_frameworks!
 
   # Pods for TestBazel
-  pod "Texture"
+#  pod "Texture"
+  pod 'RxSwift', :git => 'https://github.com/ReactiveX/RxSwift', :tag => '5.0.1'
+  pod 'SnapKit', :git => 'https://github.com/SnapKit/SnapKit', :tag => '5.0.1'
 
 end
