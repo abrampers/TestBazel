@@ -13,7 +13,11 @@ swift_library(
     # deps = [":TextureObjc"]
     deps = [
         "//Vendor/RxSwift:RxSwift",
-        "//Vendor/SnapKit:SnapKit"
+        "//Vendor/SnapKit:SnapKit",
+        # "//Vendor/Texture:Texture"
+    ],
+    copts = [
+        "-DBAZELBUILD"
     ]
     # deps = ["@RxSwift//:RxSwift"]
 )

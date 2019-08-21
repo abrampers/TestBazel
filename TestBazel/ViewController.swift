@@ -7,9 +7,10 @@
 //
 
 import UIKit
-#if DEBUG
+#if BAZELBUILD
 import Vendor_RxSwift_RxSwift
 import Vendor_SnapKit_SnapKit
+// import Vendor_Texture_Texture
 #else
 import RxSwift
 import SnapKit
