@@ -1,10 +1,34 @@
+
+new_pod_repository(
+  name = "PINOperation",
+  url = "https://github.com/pinterest/PINOperation/archive/1.1.zip",
+  owner = "@ios-cx",
+)
+
+new_pod_repository(
+  name = "PINCache",
+  url = "https://github.com/pinterest/PINCache/archive/f9f1e551d6a78d74f5528e43a8575f9d2d329e7d.zip",
+  owner = "@ios-cx",
+)
+
+new_pod_repository(
+  name = "Stripe",
+  url = "https://github.com/stripe/stripe-ios/archive/v12.1.2.zip",
+  owner = "@ios-action",
+  inhibit_warnings = True,
+
+  # Duplicate interface definition issue
+  generate_module_map = False,
+)
+
 new_pod_repository(
   name = "Texture",
-  url = "https://github.com/TextureGroup/Texture/archive/8908abe11d92628c3ca01dbfb02a80e160b2d3c3.zip",
+  url = "https://github.com/TextureGroup/Texture/archive/2.8.1.zip",
+  owner = "@ios-action",
   inhibit_warnings = True,
   # Undefined symbols
   # Compilation error: triggered module compilation from ObjC code
-  generate_module_map = True,
+  generate_module_map = False,
 )
 
 new_pod_repository(
@@ -14,6 +38,7 @@ new_pod_repository(
   # headers
   user_options = ["Core.deps += //Vendor/PINCache:PINCache"],
 
+  # TODO:
   generate_module_map = False
 )
 
@@ -27,12 +52,15 @@ new_pod_repository(
   url = "https://github.com/pinterest/PINCache/archive/d886490de6d297e38f80bb750ff2dec4822fb870.zip"
 )
 
+
 new_pod_repository(
   name = "RxSwift",
-  url = "https://github.com/ReactiveX/RxSwift/archive/5.0.1.zip"
+  url = "https://github.com/ReactiveX/RxSwift/archive/5.0.1.zip",
+  user_options = ["RxSwift.copts += --default_visibility=public"]
 )
 
 new_pod_repository(
   name = "SnapKit",
-  url = "https://github.com/SnapKit/SnapKit/archive/5.0.1.zip"
+  url = "https://github.com/SnapKit/SnapKit/archive/5.0.1.zip",
+  user_options = ["SnapKit.copts += --default_visibility=public"]
 )
